@@ -120,6 +120,30 @@
                         </div>
                     </div>
                 </div>
+                <!-- Pentagon Card -->
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img src="images/pentagon.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Pentagon</h2>
+                        <p>Area (A) =0.5 x p x b
+                        </p>
+                        <div>
+                            <!-- d1 -->
+                            <input id="pentagon-base" class="w-24 p-1 rounded-sm" type="text" placeholder="p">
+                            <span class="mr-1 ml-1">cm</span>
+                            <!-- d2 -->
+                            <input id="pentagon-height" class="w-24 p-1 rounded-sm" type="text" placeholder="b">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <h3>Area: <span id="pentagon-area"></span> <span>cm<sup>2</sup></span></h3>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button onclick="calculatePentagon()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -135,6 +159,7 @@
     <script src="scripts/rectriangle.js"></script>
     <script src="scripts/parallelogram.js"></script>
     <script src="scripts/rhombus.js"></script>
+    <script src="scripts/Pentagon.js"></script>
 </body>
 
 </html>
