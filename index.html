@@ -28,9 +28,10 @@
                         <h2 class="card-title">Triangle</h2>
                         <p>Area = 0.5 x b x h</p>
                         <div>
-                            <input id="triangle-base" class="w-24 text-xl rounded-sm" type="text" placeholder="b">
+                            <input id="triangle-base" class="w-24 text-lg rounded-sm" type="text" placeholder="base">
                             <span>cm</span>
-                            <input id="triangle-height" class="w-24 text-xl  rounded-sm" type="text" placeholder="h">
+                            <input id="triangle-height" class="w-24 text-lg  rounded-sm" type="text"
+                                placeholder="height">
                             <span>cm</span>
                         </div>
 
@@ -52,11 +53,17 @@
                         <h2 class="card-title">Rectriangle</h2>
                         <p>Area (A) = W x L</p>
                         <div class="flex">
-                            <input id="rectangle-w" class="w-24 text-lg rounded-sm p-1" type="text" placeholder="width">
-                            <span>cm</span>
-                            <input id="rectangle-i" class="w-20 p-1 w-24 text-lg rounded-sm" type="text"
+                            <input id="rectangle-length" class="w-24 text-lg rounded-sm p-1" type="text"
                                 placeholder="length">
                             <span>cm</span>
+                            <input id="rectangle-width" class="w-20 p-1 w-24 text-lg rounded-sm" type="text"
+                                placeholder="width">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-xl">Area: <span id="rectangle-display"></span> <span>cm<sup>2</sup></span>
+                            </p>
+
                         </div>
                         <div class="card-actions justify-end">
                             <button onclick="CalculateRectangleArea()" id="rectangle-btn"
@@ -64,17 +71,25 @@
                         </div>
                     </div>
                 </div>
-                <!-- shape card container -->
+                <!-- Parallelogram card -->
 
                 <div class="card w-80 bg-base-100 shadow-xl">
                     <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                             alt="Shoes" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area (A) = b x h</p>
+                        <div class="flex">
+                            <!-- base -->
+                            <input class="w-24 p-1 text-lg" type="text" placeholder="base">
+                            <span class="ml-1 mr-1">cm</span>
+                            <!-- height -->
+                            <input class="w-24 p-1 text-lg" type="text" placeholder="height">
+                            <span>cm</span>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
