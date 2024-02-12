@@ -56,7 +56,7 @@
                             <input id="rectangle-length" class="w-24 text-lg rounded-sm p-1" type="text"
                                 placeholder="length">
                             <span>cm</span>
-                            <input id="rectangle-width" class="w-20 p-1 w-24 text-lg rounded-sm" type="text"
+                            <input id="rectangle-width" class="p-1 w-24 text-lg rounded-sm" type="text"
                                 placeholder="width">
                             <span>cm</span>
                         </div>
@@ -96,15 +96,27 @@
                         </div>
                     </div>
                 </div>
+                <!-- Rhombus Card -->
                 <div class="card w-80 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" />
+                    <figure><img src="images/rhombus.png" alt="Shoes" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) =0.5 x d<sub>1</sub>x d<sub>2</sub>
+                        </p>
+                        <div>
+                            <!-- d1 -->
+                            <input id="rhombusInputD-1" class="w-24 p-1 rounded-sm" type="text" placeholder="d1">
+                            <span class="mr-1 ml-1">cm</span>
+                            <!-- d2 -->
+                            <input id="rhombusInputD-2" class="w-24 p-1 rounded-sm" type="text" placeholder="d2">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <h3>Area: <span id="rhombus-area"></span> <span>cm<sup>2</sup></span></h3>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculateRhombus()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -122,6 +134,7 @@
     <script src="scripts/script.js"></script>
     <script src="scripts/rectriangle.js"></script>
     <script src="scripts/parallelogram.js"></script>
+    <script src="scripts/rhombus.js"></script>
 </body>
 
 </html>
